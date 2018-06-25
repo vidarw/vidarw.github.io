@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Error 0x80070780: The file cannot be accessed by the system"
+date:   2015-08-24 00:00:00
+categories: error
+---
+
+### Background
+
+I've had a load of problems with file access after reinstalling Windows Server 2012 R2 after system disk crash on my private storage server.
+The server uses Storage Spaces to manage my 6 disks and the disk cluster consists of a single 7TB volume in RAID10 mode for maximum performance (and hopefully reliabilty).
+
+### Solution
+
+Make sure all the services and roles of the old server has been installed.
+In this case I was missing the "Data Deduplication" service.
+
+A big thanks to JonReeves for answering his own problem at the [TechNet forums ](https://social.technet.microsoft.com/Forums/exchange/en-US/96f93660-e34a-4caa-bb97-f907ecb2b549/files-on-2012-storage-spaces-unreadable-after-reinstalling-os?forum=winserverfiles) after troubleshooting.

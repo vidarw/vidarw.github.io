@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Welcome to my new blog!"
+date:   2015-06-02 20:40:00
+categories: info
+---
+Would like to use the opportunity to thank you for visiting #TheRealVidarpedia. My intension with this blog is to give people insight into my hobbies, interests and projects. The blog will be updated from time to time. I suggest that you subscribe to the RSS feed or follow me on twitter.
