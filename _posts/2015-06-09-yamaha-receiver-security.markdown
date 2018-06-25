@@ -6,7 +6,7 @@ categories: security
 ---
 I recently discovered that a lot of Yamaha receivers are found unprotected on the internet. A MAC filter is the only available form of protection (and only a minority has this enabled). The web interface allows total control of the devices.
 
-### Fingerprint
+## Fingerprint
 
 You can use the following details to identify Yamaha receivers using the [Shodan search engine](http://shodan.io/).
 
@@ -15,7 +15,7 @@ You can use the following details to identify Yamaha receivers using the [Shodan
     Content-Length: 0
     Connection: close
 
-### Accessing the Radio playlists
+## Accessing the Radio playlists
 
 Using [Yamaha vTuner service](http://yradio.vtuner.com/setupapp/yamaha/asp/AuthLogin/SignIn.asp) will allow you to add new custom radio channels to the receiver. This way you can totally control the device by setting up a custom radio stream. The receiver will play the music as well as display the channel name (manually added by you) on the display.
 
@@ -27,7 +27,7 @@ To add custom radio channels, you'll need to enter an email address. This will l
 
 ![yamaha_channel]({{ site.url }}/assets/yamaha_channel.png)
 
-### Conclusion
+## Conclusion
 
 Please make sure that your Yamaha device is behind a firewall. Network enabled home devices should never be connected directly to the internet without any form of protection. The security is usually really bad, and the devices usually contains a lot of personal information. Almost any basic wireless router on the market will give you basic firewall settings.
 

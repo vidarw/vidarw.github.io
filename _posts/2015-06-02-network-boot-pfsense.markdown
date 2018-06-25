@@ -9,7 +9,7 @@ This is a repost from my wordpress blog and meant as a note to self for future u
 
 A quick setup guide on how to create the basic setup for a PXE network boot environment using pfSense firewall and Windows Server.
 
-### DHCP Server - pfSense Configuration
+## DHCP Server - pfSense Configuration
 
 DHCP configuration page is found at:<br />
 Services =&gt; DHCP server (http://192.168.1.1/services_dhcp.php)
@@ -20,7 +20,7 @@ Services =&gt; DHCP server (http://192.168.1.1/services_dhcp.php)
 </table>
 <br />
 
-### TFTP Server - Tftpd32
+## TFTP Server - Tftpd32
 
 Tftpd32 is a straight forward TFTP server. Can be downloaded from http://www.jounin.net/tftp-server-for-windows.html
 
@@ -37,7 +37,7 @@ Configure your firewall properly and test the TFTP server with a client. Create 
     Received 6 bytes in 0.0 seconds
     tftp>
 
-### PXE Environment - Pxelinux
+## PXE Environment - Pxelinux
 
 Pxelinux is a part of Syslinux and can be found at https://www.kernel.org/pub/linux/utils/boot/syslinux/. It's recommended to use the latest release (6.03-pre18 in the time of writing). There are multiple variations of the pxelinux.0 binaries. For more information about pxelinux variations, check out the official wiki at http://www.syslinux.org/wiki/index.php/PXELINUX.
 
@@ -67,13 +67,13 @@ The content of pxelinux.cfg/default is the default boot menu. Here is an example
 
 Memtest86+ can be downloaded from http://www.memtest.org/#downiso. Be sure to fetch the Pre-Compiled Bootable Binary. Note that memtest86+-5.01.bin has to be renamed in order for the binary to work. Remove any special characters and the .bin extension. In this case it is renamed to memtest86 and placed in the images subfolder.
 
-### Testing with VirtualBox
+## Testing with VirtualBox
 
 Create a new Virtual Machine in VirtualBox. Be sure to use the latest version of the Oracle VM VirtualBox Extension Pack. If you have trouble with VirtualBox crashing, try changing the network adapter to _Intel PRO/1000MT Server (82545EM)_.
 
 ![pxe-menu]({{ site.url }}/assets/pxe_menu.png){:height="187px" width="300px"}
 
 
-### The next step
+## The next step
 
 The next step will be to provide more boot options and configurations. PXE has support for MAC and IP address specific configurations (create another file in the pxelinux.cfg directory). Suggested options are the OpenELEC media center and various Windows installation media.
